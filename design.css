@@ -1,0 +1,243 @@
+
+*{box-sizing:border-box;}
+
+header, nav, main, aside, footer {display:block;}
+
+/*ALL DESIGNS ON THE BODY ELEMENT*/
+body {background-color:#ACDF87;
+	background-image:url('background.gif');
+	color:#221811;
+	font-family:Calibri, Arial, Sans-serif;}
+
+
+/*ALL DESIGNS ON THE HEADER ELEMENT*/
+/* header{
+	color:#FFFFFF;
+	background-color:#193822;
+	line-height:100px;
+	padding-top: 45px;
+	padding-bottom: 5px;
+	margin-top: 0px;} */
+
+	
+/*HEADINGS DESIGNS CONFIGURATIONS SECTION*/
+h1 {font-family:'Times New Roman';
+	font-size: 3em;
+	padding-left:100px;
+	}
+h3 {color:#FFFFFF;
+		background-color:#193822;
+		padding:15px;
+		font-family:Georgia}
+
+
+/*NAV AND LINKS CONFIGURATIONS ALL HERE*/
+nav {background-color:#FFFFFF;
+	font-weight:bold;
+	font-weight:bold;
+	padding-top:5px;
+	font-size:1.5em;
+	border-top: 5px solid #EBF5DB;}
+nav ul {list-style-type:none;}
+nav a {text-decoration:none;
+	font-weight:bold;
+	padding:15px;}
+nav li {display:inline;} /*Configures the nav to display inline instead of list*/
+ul, li {text-decoration:none;
+	list-style-type:none;}
+nav a:hover {
+	color: white;
+	background-color: #193822;
+}
+
+/*MAIN AND ASIDE DESIGNS CONFIGURATIONS SECTION*/
+.main-aside-container{
+	display: flex;
+	flex-direction: row
+}
+main {background-color: #EBF5DB;
+	width:65%;
+	border-right:5px solid #FFFFFF;
+	padding-left:30px;}
+
+
+aside {
+	width:30%;
+	}
+
+table {width:90%;
+	border-spacing:0;}
+th 	{text-align: left;
+	padding:15px;}
+tr:nth-of-type(odd){background-color:#FFFFFF;}
+tr:hover{
+	font-size: larger;
+	color: #FFFFFF;
+	background-color: #193822;
+}
+
+/*CLASS CONFIGURATIONS*/
+/*position of containers for text on Home page in their respctive divisions*/
+.pos {position:relative;
+	left:30px;}
+
+.font_main_home {font-family:"Lucida Calligraphy", "Lucida Handwriting"; /*font on home page main section paragraphs*/
+	font-size: 150%;}
+.font_aside_home {font-family:"Times New Roman"; /*font on home page aside section paragraphs*/
+	font-size: 110%;}
+.supplementary_main {background-color: #EBF5DB;
+	border-right:5px solid #FFFFFF;
+	border-left:5px solid #FFFFFF;
+	padding-left:30px;}
+
+/*Images Related Classes*/	
+.image_home_size {height:200px; 
+	width:300px;}
+.image_poem_size{height:600px;
+	width:300px}
+.image_head_size {width:780px;
+	height:350px;}
+.image_snippet_size {width:450px;
+	height:550px;}
+
+/*FLOATS AND CLEAR FLOATS*/
+.floatright {float:right;
+	}
+.clear_float {clear:both;
+	overflow:auto;}
+.clear_left {clear:left;
+	overflow:auto;}
+.clear_right {clear:right;
+	overflow:auto;}
+
+
+form {padding:2em;
+	}
+label {float:left;
+	display:block;
+	text-align:right;
+	width:8em;
+	padding-right:1em;}
+input {display:block;
+	margin-bottom:1em;}
+textarea {width:600px;
+	height: 100px;
+	border-collapse:collapse;}
+
+.indent{text-indent: 50px;  /*Indented text in paragraphs*/
+	}
+.quote {text-indent:10px;
+	font-size:150%;
+	color:#0000A8;
+	font-weight:bold;
+	font-style:italic;
+	background-color:#F2E8EE;
+	font-family:Times New Roman;}
+
+
+
+/*FOOTER CONFIGURATIONS*/
+footer {font-size:.70em;
+	text-align:center;
+	color:#006600;
+	background-color:#FFFFFF;
+	padding-top:10px;
+	clear:both;}
+	
+
+/*ID CONFIGURATIONS SECTIONS*/
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color:#D9EEBF;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	min-width:900px;
+	max-width:1280px;}
+#supplementary_page {background-color: #EBF5DB;
+	width:70%;
+	border-right:5px solid #FFFFFF;
+	border-left:5px solid #FFFFFF;
+	margin-left:15%;}
+
+
+/*MOBILE DEVICES CONFIGURATIONS SETTINGS SECTIONS*/
+/*Tablet Display Configuration*/
+@media only screen and (max-width:1024px){
+	#wrapper{width:auto;
+		min-width:0;
+		margin:0;
+		padding:0;
+		box-shadow:none;}
+	body{background-image:none;
+		margin:0;
+		font-size:90%;
+		font-family:'sans-serif', calibri;}
+	header{border-bottom:5px solid #EBF5DB;
+		line-height:100px;
+		padding-top:0;
+		padding-bottom:3px;}
+	main, aside {margin:0;
+		float:none;
+		width:100%;}
+	nav{text-align:center;}
+	textarea {width:400px;
+		height: 100px;
+		border-collapse:collapse;}
+	.image_home_size{float:none;
+		}
+	.image_snippet_size {float:left;
+		width:450px;
+		height:300px;}
+	.image_head_size {width:450px;
+		height:250px;}
+	
+}
+	
+
+/*Smartphone Display Configurations*/
+@media only screen and (max-width:768px){
+	.main-aside-container{
+		display: flex;
+		flex-direction: column;
+	}
+	header{height:50%;
+	padding: 0;}
+	h1 {font-size:2em;
+		text-align:center;
+		padding-left:0}
+	nav {margin:0;
+		}
+	nav a {display:block;
+		padding:0.2em;
+		width:auto;
+		border-bottom:1px solid #EBF5DB;}
+	nav li {display:block;
+		}
+	main{padding-top:1px;
+		}
+	textarea {width:265px;
+	height: 100px;
+	border-collapse:collapse;}
+		
+	.image_home_size{float:none;
+		}
+	.image_snippet_size{float:none;
+		width:250px;
+		height:200px;}
+	.image_head_size{float:none;
+		width:350px;
+		height:200px;}
+	
+	
+	#mobile{display:inline;
+		}
+	#desktop{display:none
+		}
+}
+
+
+/*COLOR SCHEMES*/
+/*HEADERS AND ALL TITLES BACKGROUND #193822*/
+/*body background */
